@@ -289,7 +289,7 @@ async function mapData(){
                     // Toggle layer visibility by changing the layout object's visibility property.
                     if (visibility === 'visible') {
                         map.setLayoutProperty(clickedLayer, 'visibility', 'none');
-                        if (clickedLayer === 'BBS'){
+                        if (clickedLayer === 'UQAM1'){
                             map.setLayoutProperty(clickedLayer+'_outline', 'visibility', 'none')
                         };
                         this.className = '';
@@ -307,7 +307,7 @@ async function mapData(){
                     fit();
                     this.className = 'active';
                     map.setLayoutProperty(clickedLayer,'visibility','visible');
-                    if (clickedLayer === 'BBS'){
+                    if (clickedLayer === 'UQAM1'){
                         map.setLayoutProperty(clickedLayer+'_outline', 'visibility', 'visible')
                     };
                     }
