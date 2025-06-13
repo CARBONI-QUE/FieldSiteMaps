@@ -147,7 +147,7 @@ const mapStyle = {
 const map = new mapboxgl.Map({
             container: 'map',
             zoom: 10,
-            center: [-72.685, 46.164],
+            center: [-72.733, 46.322],
             style: mapStyle,
             });
 
@@ -165,7 +165,7 @@ map.addControl(new mapboxgl.NavigationControl());
 map.addControl(new mapboxgl.ScaleControl({position: 'bottom-right'}));
 
 // Define Sites
-const SiteIds = ['UQAM1'];
+const SiteIds = ['UQAM1','UQAM2','UQAM3'];
 var Sites = [];
 for( var i = 0; i < SiteIds.length; i++ ){
         Sites.push(SiteIds[i]+'_FP_Clim_Contours.geojson');
